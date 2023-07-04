@@ -57,3 +57,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
     <img src="./public/img/Featured.png"/>
 
 6.  "Use of API to the SideNav"
+
+7.  "Add component About Us and Make navbar and sidebar sticky"
+    <img src="./public/img/AboutUs.png"/>
+    => also, made the nav and side bar sticky

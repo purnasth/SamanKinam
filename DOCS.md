@@ -48,3 +48,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
     => commands used.
     i. npm install -D tailwindcss
     ii. npx tailwindcss init
+
+4.  "Update component TopNav and SideNav"
+    <img src="./public/img/TopNav.png"/>
+    <img src="./public/img/sideNav.png"/>

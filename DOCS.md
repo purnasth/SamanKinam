@@ -52,3 +52,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 4.  "Update component TopNav and SideNav"
     <img src="./public/img/TopNav.png"/>
     <img src="./public/img/sideNav.png"/>
+
+5.  "Add Feature component with a slider and use of API"
+    <img src="./public/img/Featured.png"/>

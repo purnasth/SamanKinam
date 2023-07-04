@@ -7,3 +7,7 @@
     @apply border border-black rounded-xl px-5 py-1;
   }
 }
+
+::selection {
+  @apply bg-orange-700 text-white;
+}

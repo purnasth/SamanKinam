@@ -38,5 +38,10 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 # Every Commits Explanation.
 
-<img src="./public/img/removingBoilerPlates.png"/>
+1.
 "Remove boilerplates and start from scratch"
+<img src="./public/img/removingBoilerPlates.png"/>
+
+2.
+"Update icons and Insert Building components"
+<img src="./public/img/components.png"/>

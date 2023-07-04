@@ -55,3 +55,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 5.  "Add Feature component with a slider and use of API"
     <img src="./public/img/Featured.png"/>
+
+6.  "Use of API to the SideNav"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AiOutlineMenu,
   AiOutlineSearch,
@@ -16,7 +16,16 @@ import {
 
 const TopNav = () => {
   const [sideNav, setSideNav] = useState(false);
+  const [apiData, setApiData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/")
+      .then((response) => response.json())
+      .then((data) => setApiData(data));
+  }, []);
+
   console.log(sideNav);
+
   return (
     <div className="max-w-[1520px] mx-auto flex justify-between items-center p-4">
       <div className="flex items-center">
@@ -35,7 +44,7 @@ const TopNav = () => {
         </div>
       </div>
       <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:2-[500px]">
-        <AiOutlineSearch size={25} className="cursor-pointer"/>
+        <AiOutlineSearch size={25} className="cursor-pointer" />
         <input
           className="bg-transparent p-2 w-full focus:outline-none"
           type="text"
@@ -43,7 +52,7 @@ const TopNav = () => {
         />
       </div>
       <button className="bg-orange-700 text-white border-none hidden md:flex items-center py-2 rounded-full">
-        <BsFillCartFill size={20}/>
+        <BsFillCartFill size={20} />
         &nbsp;Cart
       </button>
 
@@ -70,41 +79,91 @@ const TopNav = () => {
         <h2 className="text-3xl p-4 font-bold">
           Saman<span className="text-orange-700">Kinam</span>
           <nav>
-            <ul className="flex flex-col p-1 py-8 text-gray-900 text-lg">
-              <li className="flex py-4">
-                <BsPerson
-                  size={25}
-                  className="mr-4 text-white bg-black rounded-full"
-                />
-                My Account
+            <ul className="flex flex-col py-8 text-gray-900 text-lg">
+              <li className="flex py-4 hover:bg-gray-200 transition-colors duration-300">
+                <a
+                  href={`${apiData.length > 0 ? apiData[0].url : "#"}`}
+                  className="mr-4 text-orange-700 hover:text-orange-800"
+                >
+                  <BsPerson
+                    size={25}
+                    className="text-white bg-black rounded-full p-1"
+                  />
+                </a>
+                <a
+                  href={`${apiData.length > 0 ? apiData[0].helpLink : "#"}`}
+                  className="hover:text-orange-800"
+                >
+                  My Account
+                </a>
               </li>
-              <li className="flex py-4">
-                <TbTruckReturn
-                  size={25}
-                  className="mr-4 text-white bg-black rounded-full"
-                />
-                Delivery
+              <li className="flex py-4 hover:bg-gray-200 transition-colors duration-300">
+                <a
+                  href={`${apiData.length > 1 ? apiData[1].url : "#"}`}
+                  className="mr-4 text-orange-700 hover:text-orange-800"
+                >
+                  <TbTruckReturn
+                    size={25}
+                    className="text-white bg-black rounded-full p-1"
+                  />
+                </a>
+                <a
+                  href={`${apiData.length > 1 ? apiData[1].helpLink : "#"}`}
+                  className="hover:text-orange-800"
+                >
+                  Delivery
+                </a>
               </li>
-              <li className="flex py-4">
-                <BsFillCartFill
-                  size={25}
-                  className="mr-4 text-white bg-black rounded-full"
-                />
-                My Cart
+              <li className="flex py-4 hover:bg-gray-200 transition-colors duration-300">
+                <a
+                  href={`${apiData.length > 2 ? apiData[2].url : "#"}`}
+                  className="mr-4 text-orange-700 hover:text-orange-800"
+                >
+                  <BsFillCartFill
+                    size={25}
+                    className="text-white bg-black rounded-full p-1"
+                  />
+                </a>
+                <a
+                  href={`${apiData.length > 2 ? apiData[2].helpLink : "#"}`}
+                  className="hover:text-orange-800"
+                >
+                  My Cart
+                </a>
               </li>
-              <li className="flex py-4">
-                <FaGoogleWallet
-                  size={25}
-                  className="mr-4 text-white bg-black rounded-full"
-                />
-                My Wallet
+              <li className="flex py-4 hover:bg-gray-200 transition-colors duration-300">
+                <a
+                  href={`${apiData.length > 3 ? apiData[3].url : "#"}`}
+                  className="mr-4 text-orange-700 hover:text-orange-800"
+                >
+                  <FaGoogleWallet
+                    size={25}
+                    className="text-white bg-black rounded-full p-1"
+                  />
+                </a>
+                <a
+                  href={`${apiData.length > 3 ? apiData[3].helpLink : "#"}`}
+                  className="hover:text-orange-800"
+                >
+                  My Wallet
+                </a>
               </li>
-              <li className="flex py-4">
-                <MdHelp
-                  size={25}
-                  className="mr-4 text-white bg-black rounded-full"
-                />
-                Help
+              <li className="flex py-4 hover:bg-gray-200 transition-colors duration-300">
+                <a
+                  href={`${apiData.length > 4 ? apiData[4].url : "#"}`}
+                  className="mr-4 text-orange-700 hover:text-orange-800"
+                >
+                  <MdHelp
+                    size={25}
+                    className="text-white bg-black rounded-full p-1"
+                  />
+                </a>
+                <a
+                  href={`${apiData.length > 4 ? apiData[4].helpLink : "#"}`}
+                  className="hover:text-orange-800"
+                >
+                  Help
+                </a>
               </li>
             </ul>
           </nav>

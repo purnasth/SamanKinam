@@ -64,3 +64,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 8.  "Add component Top Picks"
     <img src="./public/img/topPicks.png"/>
+
+9.  "Update Top Picks component to Our Products with some functionality"
+    <img src="./public/img/topPicks.png"/>

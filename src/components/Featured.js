@@ -47,9 +47,10 @@ const Featured = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-        style={{ backgroundImage: `url(${sliders[currentIndex]?.image})` }}
-      ></div>
+  className="w-full h-full rounded-2xl bg-center bg-cover md:bg-contain duration-500"
+  style={{ backgroundImage: `url(${sliders[currentIndex]?.image})` }}
+></div>
+
       <div
         className={`absolute flex items-center space-x-2 bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 delay-200 ${
           isHovered ? "opacity-100" : "opacity-0"

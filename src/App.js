@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import OurProducts from "./components/OurProducts";
 import TrendingCategories from "./components/TrendingCategories";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <OurProducts />
       <TrendingCategories />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

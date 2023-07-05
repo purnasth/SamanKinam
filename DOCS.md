@@ -76,3 +76,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 11. "Build Footer component"
     <img src="./public/img/footer.png"/>
+
+12. "Redesign Scrollbar"
+    <img src="./public/img/scrollbar.png"/>

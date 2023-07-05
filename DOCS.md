@@ -61,3 +61,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 7.  "Add component About Us and Make navbar and sidebar sticky"
     <img src="./public/img/AboutUs.png"/>
     => also, made the nav and side bar sticky
+
+8.  "Add component Top Picks"
+    <img src="./public/img/topPicks.png"/>

@@ -70,3 +70,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 10. "Add Trendy Categories component"
     <img src="./public/img/TrendyCategories.png"/>
+
+11. "Build Contact us component"
+    <img src="./public/img/contact.png"/>

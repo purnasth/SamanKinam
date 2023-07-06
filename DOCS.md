@@ -85,4 +85,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 14. "Add domain name to the website and hosted with the help of github"
     => Deployed with : github
-    => Deployed Live URL : https://purnashrestha.com.np/SamanKinam
+    => Deployed Live URL : https://www.purnashrestha.com.np/SamanKinam/

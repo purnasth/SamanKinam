@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SamanKinam/static/css/main.13baf045.css",
+    "main.js": "/SamanKinam/static/js/main.e32caf5a.js",
+    "index.html": "/SamanKinam/index.html",
+    "main.13baf045.css.map": "/SamanKinam/static/css/main.13baf045.css.map",
+    "main.e32caf5a.js.map": "/SamanKinam/static/js/main.e32caf5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13baf045.css",
+    "static/js/main.e32caf5a.js"
+  ]
+}

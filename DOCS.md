@@ -78,11 +78,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
     <img src="./public/img/footer.png"/>
 
 12. "Redesign Scrollbar"
-    <img src="./public/img/scrollbar.png"/>
+    <img src="./public/img/scrollBar.png"/>
 
 13. "Update and add functionality to the add to cart"
-    <img src="./public/img/mycart.png"/>
+    <img src="./public/img/myCart.png"/>
 
 14. "Add domain name to the website and hosted with the help of github"
     => Deployed with : github
-    => Deployed Live URL : "https://purnashrestha.com.np/SamanKinam"
+    => Deployed Live URL : https://purnashrestha.com.np/SamanKinam

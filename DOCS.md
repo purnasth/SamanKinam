@@ -79,3 +79,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 12. "Redesign Scrollbar"
     <img src="./public/img/scrollbar.png"/>
+
+13. "Update and add functionality to the add to cart"
+    <img src="./public/img/mycart.png"/>

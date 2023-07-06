@@ -174,3 +174,169 @@ const TopNav = () => {
 };
 
 export default TopNav;
+
+// !!Purna this code has a bug .. that it shows only the cart is empty.
+// import React, { useState, useEffect } from "react";
+// import {
+//   AiOutlineMenu,
+//   AiOutlineSearch,
+//   AiOutlineClose,
+//   AiFillTag,
+// } from "react-icons/ai";
+// import { BsFillCartFill, BsPerson } from "react-icons/bs";
+// import { TbTruckReturn } from "react-icons/tb";
+// import { FaUserFriends, FaGoogleWallet } from "react-icons/fa";
+// import {
+//   MdHelp,
+//   MdOutlineFavorite,
+//   MdOutlineFavoriteBorder,
+// } from "react-icons/md";
+
+// const TopNav = () => {
+//   const [sideNav, setSideNav] = useState(false);
+//   const [apiData, setApiData] = useState([]);
+//   const [isCartVisible, setCartVisible] = useState(false);
+//   const [cartItems, setCartItems] = useState([]);
+
+//   useEffect(() => {
+//     fetch("https://fakestoreapi.com/")
+//       .then((response) => response.json())
+//       .then((data) => setApiData(data));
+//   }, []);
+
+//   const toggleSideNav = () => {
+//     setSideNav(!sideNav);
+//   };
+
+//   const toggleCartVisibility = () => {
+//     setCartVisible(!isCartVisible);
+//   };
+
+//   const addToCart = (product) => {
+//     setCartItems([...cartItems, product]);
+//   };
+
+//   const removeFromCart = (productId) => {
+//     const updatedCartItems = cartItems.filter((item) => item.id !== productId);
+//     setCartItems(updatedCartItems);
+//   };
+
+//   return (
+//     <div className="max-w-[1520px] mx-auto flex justify-between items-center p-4 sticky top-0 bg-white z-20">
+//       <div className="flex items-center">
+//         <div onClick={toggleSideNav} className="cursor-pointer">
+//           <AiOutlineMenu size={25} />
+//         </div>
+//         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 pb-2 font-bold cursor-pointer">
+//           Saman
+//           <span className="text-orange-700">Kinam</span>
+//         </h1>
+//         <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default">
+//           <p className="bg-orange-700 text-white rounded-full p-2 font-bold">
+//             Free
+//           </p>
+//           <p className="p-2 font-bold">Delivery</p>
+//         </div>
+//       </div>
+//       <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:2-[500px]">
+//         <AiOutlineSearch size={25} className="cursor-pointer" />
+//         <input
+//           className="bg-transparent p-2 w-full focus:outline-none"
+//           type="text"
+//           placeholder="Search products, brands and more"
+//         />
+//       </div>
+//       <button
+//         className="bg-orange-700 text-white border-none hidden md:flex items-center py-2 rounded-full"
+//         onClick={toggleCartVisibility}
+//       >
+//         <BsFillCartFill size={20} />
+//         &nbsp;Cart
+//       </button>
+
+//       {sideNav ? (
+//         <div
+//           className="bg-black/60 fixed w-full h-screen z-10 top-0 left-0"
+//           onClick={toggleSideNav}
+//         ></div>
+//       ) : null}
+
+//       <div
+//         className={
+//           sideNav
+//             ? "bg-white fixed w-4/5 h-screen z-20 top-0 right-0 transition duration-500 ease-in-out transform translate-x-0"
+//             : "bg-white fixed w-4/5 h-screen z-20 top-0 right-0 transition duration-500 ease-in-out transform translate-x-full"
+//         }
+//       >
+//         <div className="flex justify-between items-center p-4">
+//           <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 pb-2 font-bold cursor-pointer">
+//             Saman
+//             <span className="text-orange-700">Kinam</span>
+//           </h1>
+//           <div onClick={toggleSideNav} className="cursor-pointer">
+//             <AiOutlineClose size={25} />
+//           </div>
+//         </div>
+//         <div className="flex flex-col items-center justify-center">
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="bg-orange-700 text-white rounded-full p-2 font-bold">
+//               Free
+//             </p>
+//             <p className="p-2 font-bold">Delivery</p>
+//           </div>
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Sign In</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Orders</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Wishlist</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Rewards</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Gift Cards</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Notifications</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Help</p>
+//           </div>
+
+//           <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//             <p className="p-2 font-bold">Contact Us</p>
+//           </div>
+//         </div>
+//       </div>
+
+//       {isCartVisible ? (
+//         <div className="bg-white fixed w-4/5 h-screen z-20 top-0 right-0 transition duration-500 ease-in-out transform translate-x-0">
+//           <div className="flex justify-between items-center p-4">
+//             <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 pb-2 font-bold cursor-pointer">
+//               Cart
+//             </h1>
+//             <div onClick={toggleCartVisibility} className="cursor-pointer">
+//               <AiOutlineClose size={25} />
+//             </div>
+//           </div>
+//           <div className="flex flex-col items-center justify-center">
+//             <div className="flex items-center bg-gray-200 rounded-full p-1 text-[14px] cursor-default mb-4">
+//               <p className="p-2 font-bold">Your cart is empty</p>
+//             </div>
+//           </div>
+//         </div>
+//       ) : null}
+//     </div>
+//   );
+// };
+
+// export default TopNav;

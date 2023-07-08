@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SamanKinam/static/css/main.13baf045.css",
-    "main.js": "/SamanKinam/static/js/main.e32caf5a.js",
-    "index.html": "/SamanKinam/index.html",
-    "main.13baf045.css.map": "/SamanKinam/static/css/main.13baf045.css.map",
-    "main.e32caf5a.js.map": "/SamanKinam/static/js/main.e32caf5a.js.map"
+    "main.css": "/SananKinam/static/css/main.c5efaf3e.css",
+    "main.js": "/SananKinam/static/js/main.ee532e06.js",
+    "index.html": "/SananKinam/index.html",
+    "main.c5efaf3e.css.map": "/SananKinam/static/css/main.c5efaf3e.css.map",
+    "main.ee532e06.js.map": "/SananKinam/static/js/main.ee532e06.js.map"
   },
   "entrypoints": [
-    "static/css/main.13baf045.css",
-    "static/js/main.e32caf5a.js"
+    "static/css/main.c5efaf3e.css",
+    "static/js/main.ee532e06.js"
   ]
 }

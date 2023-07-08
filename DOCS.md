@@ -74,15 +74,20 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 11. "Build Contact us component"
     <img src="./public/img/contact.png"/>
 
-11. "Build Footer component"
+12. "Build Footer component"
     <img src="./public/img/footer.png"/>
 
-12. "Redesign Scrollbar"
+13. "Redesign Scrollbar"
     <img src="./public/img/scrollBar.png"/>
 
-13. "Update and add functionality to the add to cart"
+14. "Update and add functionality to the add to cart"
     <img src="./public/img/myCart.png"/>
 
-14. "Add domain name to the website and hosted with the help of github"
+15. "Add domain name to the website and hosted with the help of github"
     => Deployed with : github
     => Deployed Live URL : https://www.purnashrestha.com.np/SamanKinam/
+
+16. "Fix build and host issues"
+    <img src="./public/img/fixBuild.png"/>
+    => Deployed with : cloudflare
+    => Deployed Live URL : https://samankinam.pages.dev/

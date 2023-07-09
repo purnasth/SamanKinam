@@ -95,3 +95,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 17. "Update the component your cart with a mathematical total calculation and functionality"
     => <img src="./public/img/productDetails.png"/>
     => <img src="./public/img/yourCartCalc.png"/>
+
+18. "Add the popup about the product details with ratings, details, price and description on trendy categories"
+=> <img src="./public/img/productDetailsPopup.png"/>

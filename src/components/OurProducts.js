@@ -170,7 +170,10 @@ const OurProducts = () => {
           ))}
         </div>
         {selectedProduct && (
-          <div className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div
+            className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={closeProductDetails}
+          >
             <div className="bg-white w-5/6 sm:w-2/3 md:w-1/2 lg:w-1/3 p-6 rounded-lg">
               <h3 className="text-lg sm:text-xl font-bold mb-2">
                 {selectedProduct.title}

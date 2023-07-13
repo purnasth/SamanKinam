@@ -60,7 +60,7 @@ const Featured = () => {
           <div
             key={index}
             className={`mb-2 h-3 w-3 rounded-full transition-all cursor-pointer ${
-              index === currentIndex ? "bg-orange-700 w-10" : "bg-gray-300"
+              index === currentIndex ? "bg-orange-700 w-8" : "bg-gray-300"
             }`}
             onClick={() => setCurrentIndex(index)}
           ></div>

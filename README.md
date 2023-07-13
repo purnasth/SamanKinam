@@ -1,48 +1,96 @@
-# Assignment Title: E-commerce Development Task
+### Deployed Live URL : https://samankinam.pages.dev/
 
-## Assignment Description:
+# Getting Started with Create React App
 
-In this assignment, you will create a basic e-commerce application using Next.js / React.js. You'll apply key React/Next concepts and fundamental web development skills. Your task is to develop a multi-page web application named "OnlineStore" that allows users to browse and search for products.
+## Available Scripts
 
-## Instructions:
+In the project directory, you can run:
 
-1. Fork the provided project repository to your profile and clone it to your machine to begin the project.
-2. Design and implement a web application named "OnlineStore" that allows users to browse and search for products.
-3. The application should have the following pages:
-   - Home Page: Display a list of products with their images, names, and prices. Fetch the list from the provided API endpoint.
-   - Search Page: Include a search bar where users can input the name of a product. On form submission, display a list of search results (products) fetched from the API endpoint.
-   - Product Details Page: When a user clicks on a product from the search results or product list, they should be redirected to a page that displays detailed information about the product, including the product image, name, price, and description.
+### `npm start`
 
-You can fetch data using the following API endpoint: https://fakestoreapi.com/
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Requirements:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Use React.js/Next.js to create the web application.
-- Create a visually appealing UI using any CSS framework (like Bootstrap, Tailwind CSS).
-- Use react query (Tanstack query) for fetching and caching the api data.
-- Implement client-side routing to enable smooth transitions between pages.
-- Write clean, maintainable, and well-documented code.
-- Use Git for version control, committing your code regularly to the forked Git repository in your profile.
-- Deploy the application to a hosting platform (e.g., Vercel, Netlify) and provide a live demo URL in your repo and the submission form.
+### `npm test`
 
-### Bonus Points:
+Launches the test runner in the interactive watch mode.\
 
-- Making use of TypeScript for type safety.
-- Use of Next.js is preferred over react
-- Use of global state management with Redux toolkit, Recoil or any other state management library.
-- Implement a responsive UI to improve user experience on mobile devices.
-- Handle loading and error states during data fetching.
-- Add a shopping cart functionality where users can add products to the cart and view the cart.
+### `npm run build`
 
-## Submission Guidelines:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Fork this GitHub repository [Assignment Repo](https://github.com/internsathi/frontend-assignment) to your own GitHub account.
-2. Commit your code regularly and push the changes to your forked repository.
-3. Do not create a pull request; just submit your forked repository.
-4. Provide a DOCS.md file with all the technologies used and how to run the program locally.
-5. Once you have completed the assignment, share the repository URL with us via the [submission form](https://forms.gle/G8o13gui7hQR8p39A).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Submission Deadline: Thursday, July 6, 2023, 4:00 PM
+### `npm run eject`
 
-Check out the discussion section of this repo to ask any related queries or doubts.
-Note: The assignment is intended to help you grasp basic concepts. Don't hesitate to ask for any clarifications in the discussion section of this repo. Good luck with your assignment!
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+### E-COMMERCE WEBSITE ENTITLED "SAMANKINAM" PROJECT STARTS
+
+# Every Commits Explanation.
+
+1.  "Remove boilerplates and start from scratch"
+    <img src="./public/img/removingBoilerPlates.png"/>
+
+2.  "Update icons and Insert Building components"
+    <img src="./public/img/components.png"/>
+
+3.  "Install tailwindcss"
+    => commands used.
+    i. npm install -D tailwindcss
+    ii. npx tailwindcss init
+
+4.  "Update component TopNav and SideNav"
+    <img src="./public/img/TopNav.png"/>
+    <img src="./public/img/sideNav.png"/>
+
+5.  "Add Feature component with a slider and use of API"
+    <img src="./public/img/Featured.png"/>
+
+6.  "Use of API to the SideNav"
+
+7.  "Add component About Us and Make navbar and sidebar sticky"
+    <img src="./public/img/AboutUs.png"/>
+    => also, made the nav and side bar sticky
+
+8.  "Add component Top Picks"
+    <img src="./public/img/topPicks.png"/>
+
+9.  "Update Top Picks component to Our Products with some functionality"
+    <img src="./public/img/topPicks.png"/>
+
+10. "Add Trendy Categories component"
+    <img src="./public/img/TrendyCategories.png"/>
+
+11. "Build Contact us component"
+    <img src="./public/img/contact.png"/>
+
+12. "Build Footer component"
+    <img src="./public/img/footer.png"/>
+
+13. "Redesign Scrollbar"
+    <img src="./public/img/scrollBar.png"/>
+
+14. "Update and add functionality to the add to cart"
+    <img src="./public/img/myCart.png"/>
+
+15. "Add domain name to the website and hosted with the help of github"
+    => Deployed with : github
+    => Deployed Live URL : https://www.purnashrestha.com.np/SamanKinam/
+
+16. "Fix build and host issues"
+    <img src="./public/img/fixBuild.png"/>
+    => Deployed with : cloudflare
+    => Deployed Live URL : https://samankinam.pages.dev/
+
+17. "Update the component your cart with a mathematical total calculation and functionality"
+    => <img src="./public/img/productDetails.png"/>
+    => <img src="./public/img/yourCartCalc.png"/>
+
+18. "Add the popup about the product details with ratings, details, price and description on trendy categories"
+    => <img src="./public/img/productDetailsPopup.png"/>

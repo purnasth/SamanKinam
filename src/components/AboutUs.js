@@ -44,7 +44,13 @@ const AboutUs = () => {
           <div className="bg-gray-200 animate-pulse w-[10rem] h-[10rem] mr-4" />
         )}
         <div className="flex">
-          <p className="text-orange-700 text-3xl text-center p-4">
+          <p
+            className="text-orange-700 text-3xl text-center p-4"
+            style={{
+              fontFamily: "Cedarville Cursive",
+              cursive: "Cedarville Cursive",
+            }}
+          >
             "Quality products. Unbeatable prices."
           </p>
         </div>
